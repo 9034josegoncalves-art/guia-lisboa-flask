@@ -1,0 +1,128 @@
+/* CSS da pagina de Gestao de Locais */
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333333;
+  background-color: #fcfbf8;
+}
+
+h1 {
+  color: #7b341e;
+  text-align: center;
+}
+
+h2 {
+  color: #c05621;
+  margin-top: 20px;
+}
+
+nav {
+  background-color: #fff7ed;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #f3d9c0;
+}
+
+nav b {
+  color: #c05621;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #f3d9c0;
+  margin: 20px 0;
+}
+
+a {
+  color: #c05621;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* formulario */
+form {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #f3d9c0;
+}
+
+td form {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+input,
+textarea {
+  padding: 6px 8px;
+  border: 1px solid #e2b893;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #c05621;
+}
+
+button {
+  background-color: #dd6b20;
+  color: #ffffff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+button:hover {
+  background-color: #c05621;
+}
+
+td form button {
+  background-color: #c53030;
+}
+
+td form button:hover {
+  background-color: #9b2c2c;
+}
+
+/* tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+th {
+  background-color: #c05621;
+  color: #ffffff;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid #f3d9c0;
+  padding: 8px;
+  vertical-align: top;
+}
+
+td img {
+  border-radius: 6px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fffaf3;
+}

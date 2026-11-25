@@ -1,0 +1,81 @@
+/* CSS da pagina Locais a Visitar */
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333333;
+  background-color: #fcfbf8;
+}
+
+h1 {
+  color: #7b341e;
+  text-align: center;
+}
+
+nav {
+  background-color: #fff7ed;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #f3d9c0;
+}
+
+nav b {
+  color: #c05621;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #f3d9c0;
+  margin: 20px 0;
+}
+
+h2 {
+  color: #c05621;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* cada monumento fica destacado com uma linha a esquerda */
+h3 {
+  color: #9c4221;
+  margin-top: 30px;
+  padding-left: 10px;
+  border-left: 4px solid #dd6b20;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+small {
+  display: block;
+  text-align: center;
+  color: #666666;
+  font-style: italic;
+}
+
+a {
+  color: #c05621;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

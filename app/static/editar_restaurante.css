@@ -1,0 +1,72 @@
+/* CSS da pagina Editar Restaurante */
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #333333;
+  background-color: #fffdf7;
+}
+
+h1 {
+  color: #744210;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ecd9a0;
+  margin: 20px 0;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 1px solid #ecd9a0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  padding: 7px 9px;
+  border: 1px solid #d6c08a;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #b7791f;
+}
+
+button {
+  background-color: #b7791f;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #975a16;
+}
+
+a {
+  margin-left: 12px;
+  color: #666666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c53030;
+  text-decoration: underline;
+}

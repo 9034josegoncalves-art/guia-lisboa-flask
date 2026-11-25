@@ -1,0 +1,121 @@
+/* CSS da pagina de Gestao de Restaurantes */
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333333;
+  background-color: #fffdf7;
+}
+
+h1 {
+  color: #744210;
+  text-align: center;
+}
+
+h2 {
+  color: #b7791f;
+  margin-top: 20px;
+}
+
+nav {
+  background-color: #fefcbf;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ecd9a0;
+}
+
+nav b {
+  color: #b7791f;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ecd9a0;
+  margin: 20px 0;
+}
+
+a {
+  color: #b7791f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* formulario */
+form {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #ecd9a0;
+}
+
+td form {
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+input,
+select {
+  padding: 6px 8px;
+  border: 1px solid #d6c08a;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 250px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #b7791f;
+}
+
+button {
+  background-color: #b7791f;
+  color: #ffffff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #975a16;
+}
+
+/* botao apagar fica vermelho */
+td form button {
+  background-color: #c53030;
+}
+
+td form button:hover {
+  background-color: #9b2c2c;
+}
+
+/* tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+th {
+  background-color: #b7791f;
+  color: #ffffff;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid #ecd9a0;
+  padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fffbeb;
+}

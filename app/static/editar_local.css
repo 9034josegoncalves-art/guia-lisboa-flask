@@ -1,0 +1,80 @@
+/* CSS da pagina Editar Local */
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #333333;
+  background-color: #fcfbf8;
+}
+
+h1 {
+  color: #7b341e;
+  text-align: center;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #f3d9c0;
+  margin: 20px 0;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 1px solid #f3d9c0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  padding: 7px 9px;
+  border: 1px solid #e2b893;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #c05621;
+}
+
+img {
+  display: block;
+  margin: 10px 0 15px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+button {
+  background-color: #dd6b20;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #c05621;
+}
+
+a {
+  margin-left: 12px;
+  color: #666666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c53030;
+  text-decoration: underline;
+}

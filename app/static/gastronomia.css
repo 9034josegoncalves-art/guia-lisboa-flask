@@ -1,0 +1,108 @@
+/* CSS da pagina Gastronomia Tipica */
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333333;
+  background-color: #fffdf7;
+}
+
+h1 {
+  color: #744210;
+  text-align: center;
+}
+
+nav {
+  background-color: #fefcbf;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ecd9a0;
+}
+
+nav b {
+  color: #b7791f;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ecd9a0;
+  margin: 20px 0;
+}
+
+h2 {
+  color: #b7791f;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #975a16;
+  margin-top: 25px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+small {
+  display: block;
+  text-align: center;
+  color: #666666;
+  font-style: italic;
+}
+
+a {
+  color: #b7791f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* tabela dos restaurantes */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  background-color: #ffffff;
+}
+
+th {
+  background-color: #b7791f;
+  color: #ffffff;
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid #ecd9a0;
+  padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fffbeb;
+}
+
+tbody tr:hover {
+  background-color: #fefcbf;
+}
+
+/* video */
+iframe {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
