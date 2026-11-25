@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Lisboa - Locais a Visitar</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='locais.css') }}">
+</head>
+<body>
+  <h1>Locais Imperdíveis em Lisboa</h1>
+  <p>Descobre os monumentos mais icónicos e os bairros históricos da capital.</p>
+
+  <hr>
+  <!-- Menu de Navegação -->
+  <nav>
+    <p>
+      <strong>Navegação:</strong> |
+      <a href="{{ url_for('index') }}">Início</a> |
+      <b>Locais a Visitar</b> |
+      <a href="{{ url_for('gastronomia') }}">Gastronomia Típica</a> |
+      <a href="{{ url_for('restaurantes') }}">Restaurantes</a> |
+      <a href="{{ url_for('gerir_locais') }}">Gerir Locais</a> |
+    </p>
+  </nav>
+  <hr>
+
+  <h2>Principais Atrações e Monumentos</h2>
+
+  {% for l in locais %}
+  <h3>{{ loop.index }}. {{ l.nome }}</h3>
+  <p>{{ l.descricao }}</p>
+
+  <a href="{{ l.link }}" target="_blank">
+    <img src="{{ l.imagem }}" alt="{{ l.nome }}" width="300">
+  </a>
+  <p><small>(Clica na imagem para saber mais sobre {{ l.nome }})</small></p>
+  {% endfor %}
+</body>
+</html>

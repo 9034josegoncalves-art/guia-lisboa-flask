@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Lisboa - Gerir Locais</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='gerir_locais.css') }}">
+</head>
+<body>
+    <h1>Gestão de Locais a Visitar</h1>
+    <nav>
+        <p>
+            <strong>Navegação:</strong> |
+            <a href="{{ url_for('index') }}">Início</a> |
+            <a href="{{ url_for('locais') }}">Locais a Visitar</a> |
+            <a href="{{ url_for('gastronomia') }}">Gastronomia Típica</a> |
+            <a href="{{ url_for('restaurantes') }}">Restaurantes</a> |
+            <b>Gerir Locais</b> |
+        </p>
+    </nav>
+    <hr>
+    <h2>Adicionar Novo Local</h2>
+    <form method="POST">
+        <p>Nome: <input type="text" name="nome" required></p>
+        <p>Descrição:<br><textarea name="descricao" rows="4" required></textarea></p>
+        <p>Link (Wikipédia): <input type="url" name="link" required></p>
+        <p>Imagem (URL): <input type="url" name="imagem" required></p>
+        <button type="submit">Guardar Local</button>
+    </form>
+    <hr>
+    <h2>Lista de Locais na Base de Dados</h2>
+    <table border="1" cellpadding="8">
+        <thead>
+            <tr>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for l in locais %}
+            <tr>
+                <td><img src="{{ l.imagem }}" alt="{{ l.nome }}" width="80"></td>
+                <td><a href="{{ l.link }}" target="_blank">{{ l.nome }}</a></td>
+                <td>{{ l.descricao }}</td>
+                <td>
+                    <a href="{{ url_for('editar_local', id=l.id) }}">
+                        <button type="button">Editar</button>
+                    </a>
+                    <form action="{{ url_for('apagar_local', id=l.id) }}" method="POST" style="display:inline;">
+                        <button type="submit">Apagar</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

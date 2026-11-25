@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Local - Guia de Lisboa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='editar_local.css') }}">
+</head>
+<body>
+    <h1>Editar Local</h1>
+    <hr>
+    <form method="POST">
+        <p>Nome: <input type="text" name="nome" value="{{ local.nome }}" required></p>
+        <p>Descrição:<br><textarea name="descricao" rows="4" required>{{ local.descricao }}</textarea></p>
+        <p>Link (Wikipédia): <input type="url" name="link" value="{{ local.link }}" required></p>
+        <p>Imagem (URL): <input type="url" name="imagem" value="{{ local.imagem }}" required></p>
+        <img src="{{ local.imagem }}" alt="{{ local.nome }}" width="200">
+        <br>
+        <button type="submit">Guardar Alterações</button>
+        <a href="{{ url_for('gerir_locais') }}">Cancelar</a>
+    </form>
+</body>
+</html>
